@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  text-align: center;
+  padding-top: 80px;
+  color: #fff;
+}
+
+.teddy {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  background: pink;
+  color: #333;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.buttons button:hover {
+  background: #ff99cc;
+}
+
+.gallery {
+  padding: 20px;
+  background: #fff0f5;
+  text-align: center;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding: 20px 0;
+}
+
+.image-card {
+  min-width: 80%;
+  max-width: 300px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #888;
+  background: white;
+}
+
+.image-card img {
+  width: 100%;
+  display: block;
+}
+
+.caption {
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+@media (hover: hover) {
+  #noBtn.runaway {
+    position: absolute;
+  }
+}
+.teddy-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
